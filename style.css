@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: #000;
+}
+
+i{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 65px;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+}
+.applicationName{
+    cursor: pointer;
+    margin-left: 7px;
+}
+.applicationName .fa-youtube{
+    margin-left: 15px;
+    color: red;
+}
+.applicationName span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-box{
+    width: 450px;
+    display: flex;
+    align-items: center;
+}
+.search-box input{
+    width: 90%;
+    padding: 11px 8px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ddde;
+    border-radius: 23px 0 0 23px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.933);
+    background-color: #202020;
+    border-right: none;
+}
+.search-box i{
+    background-color: #202020;
+    padding: 8px 10px;
+    font-size: 21px;
+    width: 10%;
+    color: #ddde;
+    border-radius:0 23px 23px 0;
+    border: 1px solid #fff;
+}
+
+.fa-microphone {
+    margin-left: 6px;
+    font-size: 18px;
+    background-color:#161515 ;
+    padding: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-microphone:hover{
+    background-color: #4d4a4a;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+.right i{
+   margin-left: 16px; 
+   font-size: 21px;
+}
+.user{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 13px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+.content .side{
+    border-right: 1px solid gray;
+    flex: 12%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7px;
+}
+.side .col {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+.side .col div{
+    display: flex;
+    margin: 8px 0;
+    padding: 10px;
+    width: 90%;
+    border-radius: 11px;
+    align-items: center;
+}
+.active{
+    background-color: #4d4a4a;
+}
+.side .col div:hover{
+    background-color: #4d4a4a;
+}
+.side .col div i{
+    font-size: 17px;
+    margin-left: 10px;
+}
+.side .col div span{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    margin-left: 10px;
+}
+.content .main{
+    flex: 75%;
+}
+
+.main .app-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 15px 0;
+}
+.main .app-bar span{
+    background: #4d4a4a;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    margin-left: 8px;
+    border-radius: 22px;
+}
+.main .app-bar span:hover{
+    background: #807c7c;
+}
+.videos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.videos .video{
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    margin:0 14px;
+    cursor: pointer;
+}
+.row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 13px;
+}
+.videos .video .video-img{
+    width: 100%;
+    border-radius: 22px;
+}
+.videos .video .video-img img{
+    width: 100%;
+}
+.publisher-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 8px;
+}
+.info .video-title{
+    font-size: 18px;
+    color: #fff;
+}
+.publisher-name{
+margin-left: 6px;
+font-size: 17px;
+color: #fff;
+font-weight: bold;
+margin: 5px ;
+}
+.views-date{
+    padding:0 10px;
+    color: #8b8585;
+    font-size: 16px;
+    display: flex;
+}
+.views-date span{
+    margin-right: 18px;
+}
+@media (max-width: 992px) {
+
+    .content .side{
+        display: none;
+    }
+    .content .main{
+        flex: 100%;
+    }
+    .main .app-bar{
+        display: none;
+    }
+.row {
+flex-direction: column;
+}
+    .videos .video{
+        flex: 100%;
+        margin-bottom: 8px;
+    }
+    .right,.left{
+        display: none;
+    }
+    .search-box{
+        width: 100%;
+        font-size: 17px;
+    }
+    i{
+        font-size: 17px;
+    }
+    header nav{
+        justify-content: center;
+    }
+    .center{
+        width: 100%;
+    }
+    .search-box i{
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        padding-right: 10px;
+        align-items: center;
+    }
+}
